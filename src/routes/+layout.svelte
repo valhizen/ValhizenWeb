@@ -24,7 +24,7 @@
 		padding: 0;
 		width: 100%;
 		min-height: 100vh;
-		font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+		font-family: 'Georgia', 'Times New Roman', 'Times', serif;
 		background: var(--color-bg);
 		color: var(--color-text);
 		line-height: 1.6;
@@ -94,10 +94,10 @@
 	}
 
 	:global(p) {
-		font-size: 1rem;
+		font-size: 1.1rem;
 		margin: 1rem 0;
 		color: var(--color-text-secondary);
-		line-height: 1.6;
+		line-height: 1.7;
 	}
 
 	:global(a) {
@@ -131,7 +131,7 @@
 		}
 		
 		:global(p) {
-			font-size: 0.9rem;
+			font-size: 1rem;
 		}
 	}
 </style>
