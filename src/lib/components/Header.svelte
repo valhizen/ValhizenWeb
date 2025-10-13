@@ -14,6 +14,8 @@
 			<a href="/" class="nav-link" class:active={currentPath === '/'}>Home</a>
 			<a href="/blogs" class="nav-link" class:active={currentPath === '/blogs'}>Blogs</a>
 			<a href="/projects" class="nav-link" class:active={currentPath === '/projects'}>Projects</a>
+			<a href="/contact" class="nav-link" class:active={currentPath === '/contact'}>Contact</a>
+
 			<a
 				href="https://github.com/valhizen"
 				target="_blank"

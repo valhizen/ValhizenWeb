@@ -15,26 +15,13 @@
         {/if}
         <div class="card-header">
           <h3 class="card-title">{post.title}</h3>
-          <div class="card-meta">
-            {#if post.date}
-              <span>{new Date(post.date).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })}</span>
-            {/if}
-            {#if post.readingTime}
-              <span>• {post.readingTime}</span>
-            {/if}
-          </div>
+          {#if post.date}
+            <div class="card-meta">{new Date(post.date).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })}</div>
+          {/if}
         </div>
         {#if post.description}
           <p class="card-desc">{post.description}</p>
         {/if}
-        {#if post.tags && post.tags.length}
-          <div class="card-tags">
-            {#each post.tags.slice(0, 3) as tag}
-              <span class="tag">{tag}</span>
-            {/each}
-          </div>
-        {/if}
-        <div class="card-cta">Read →</div>
       </a>
     {/each}
   </div>
@@ -103,11 +90,9 @@
     overflow: hidden;
   }
 
-  .card-tags { display: flex; gap: 0.35rem; flex-wrap: wrap; }
-  .tag { font-size: 0.75rem; color: var(--color-text-muted); border: 1px solid var(--color-border); padding: 0.1rem 0.4rem; border-radius: 999px; }
+  /* tag styles intentionally removed to keep UI minimal when unused */
 
-  .card-cta { margin-top: 0.1rem; color: var(--color-primary); font-weight: 500; }
-  .card:hover .card-cta { text-decoration: underline; }
+  
   
   @media (max-width: 768px) {
     .cards { gap: 1rem; }
