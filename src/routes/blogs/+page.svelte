@@ -1,30 +1,116 @@
 
-<h1>
-At the foot of the mountain
-</h1>
+<script lang="ts">
+  import { posts } from '$lib/posts';
+  const allPosts = posts;
+</script>
 
-<h4>
-I have been stuck at the foot of the mountain for longer than I want to admit. I have circled it countless times, and in that I have gathered skills like supplies for the climb Hackathon wins, freelance work, C++ syntax I can write in my sleep. I am not at zero. But I am not climbing either.
-</h4>
+<div class="page">
+  <h1 class="page-title">Blogs</h1>
 
-<h4>
-The summit is scary. I look up and see Linus Torvalds, Casey Muratori, Hidetaka Miyazaki and many more people who have built worlds, entire systems, and legacies. And when I look up, I am scared that I will never be capable of that and I will spend my entire life at the base.
-</h4>
+  <div class="cards">
+    {#each allPosts as post}
+      <a class="card" href={`/blogs/${post.slug}`}>
+        {#if post.coverImage}
+          <img class="card-cover" src={post.coverImage} alt={post.title} loading="lazy" />
+        {/if}
+        <div class="card-header">
+          <h3 class="card-title">{post.title}</h3>
+          <div class="card-meta">
+            {#if post.date}
+              <span>{new Date(post.date).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })}</span>
+            {/if}
+            {#if post.readingTime}
+              <span>• {post.readingTime}</span>
+            {/if}
+          </div>
+        </div>
+        {#if post.description}
+          <p class="card-desc">{post.description}</p>
+        {/if}
+        {#if post.tags && post.tags.length}
+          <div class="card-tags">
+            {#each post.tags.slice(0, 3) as tag}
+              <span class="tag">{tag}</span>
+            {/each}
+          </div>
+        {/if}
+        <div class="card-cta">Read →</div>
+      </a>
+    {/each}
+  </div>
+  
+</div>
 
-<h4>
-I want to build. Not for clout, not for recognition though I won't lie, I do want those things eventually. I want to build because there is a game in my head, an industry I want to build, something I want to make real. And I am starting with this alias "valhizen" so I can climb without the weight of my identity crushing me every single time I slip. Maybe one day I will give it a face, but right now I need to start moving. I want to do it publicly with accountability, or I will keep circling forever.
+<style>
+  .page { max-width: 860px; margin: 0 auto; }
+  .page-title { text-align: center; margin-top: 0; }
+  .cards { display: grid; grid-template-columns: 1fr; gap: 1rem; width: 100%; }
+  @media (min-width: 720px) { .cards { grid-template-columns: repeat(2, 1fr); gap: 1rem; } }
 
-</h4>
+  .card {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    padding: 0.85rem;
+    color: var(--color-text);
+    text-decoration: none;
+    transition: background 0.2s ease, border-color 0.2s ease, transform 0.15s ease, box-shadow 0.15s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    overflow: hidden;
+    box-shadow: 0 0 0 rgba(0,0,0,0);
+  }
 
-<h4>
-Every time I start a project, the pattern is the same. I set up my dev environment, write some code, and when I hit a wall, I abandon it. I know what I need to do but have no idea how to actually do it. Recently I was building a start screen for a game. I designed a start screen in Krita, knew what I wanted, but when it came to implementation I froze. I didn't know where to start from. I closed the file. Eventually I changed my OS so I won't have to look at it again. And I realized what I needed wasn't motivation or inspiration. I needed accountability. I needed discipline. And maybe by making this public as "valhizen," it would force me to stop running.
-</h4>
+  .card:hover {
+    background: var(--color-bg-hover);
+    border-color: var(--color-border-light);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+  }
 
-<h4>
+  .card-cover {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid var(--color-border);
+  }
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.75rem;
+  }
 
-Now I'm committing. I'm going to build the start screen I abandoned the one I designed and then ran from. I'll design it again, and this time I'll code it. In one week, October 19th, 2025, I'll report back here with everything what I built, where I got stuck, how I pushed through.
-</h4>
+  .card-title {
+    margin: 0;
+    font-size: 1.05rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 
-<h4>
-  This is the first real climb. Not another circle around the base. Not another dev environment that never becomes anything. valhizen starts now.
-</h4>
+  .card-meta { color: var(--color-text-muted); font-size: 0.85rem; display: flex; gap: 0.35rem; }
+
+  .card-desc {
+    margin: 0;
+    color: var(--color-text-secondary);
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .card-tags { display: flex; gap: 0.35rem; flex-wrap: wrap; }
+  .tag { font-size: 0.75rem; color: var(--color-text-muted); border: 1px solid var(--color-border); padding: 0.1rem 0.4rem; border-radius: 999px; }
+
+  .card-cta { margin-top: 0.1rem; color: var(--color-primary); font-weight: 500; }
+  .card:hover .card-cta { text-decoration: underline; }
+  
+  @media (max-width: 768px) {
+    .cards { gap: 1rem; }
+  }
+  @media (max-width: 768px) { .page { padding: 0 0.5rem; } }
+</style>

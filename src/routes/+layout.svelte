@@ -28,6 +28,7 @@
 		background: var(--color-bg);
 		color: var(--color-text);
 		line-height: 1.6;
+		text-align: left; /* ensure global left alignment */
 	}
 
 	:global(*) {
