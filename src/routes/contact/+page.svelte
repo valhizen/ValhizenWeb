@@ -4,7 +4,7 @@
     <p> Based on which platform I will respond faster</p>
     
     <p style="text-align: center; margin: 1.5rem 0;">
-      <strong>Discord:</strong> kawaihehe1<br>
+      <strong>Discord:</strong>valhizen<br>
       <strong>Email:</strong> <a href="mailto:valhizen@gmail.com">valhizen@gmail.com</a><br>
       <strong>X (Twitter):</strong> <a href="https://x.com/valhizen28648" target="_blank" rel="noopener">@valhizen28648</a>
     </p>
