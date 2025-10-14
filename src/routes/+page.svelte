@@ -1,6 +1,7 @@
 <script lang="ts">
   import * as THREE from "three";
   import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
+  import { DRACOLoader } from "three/addons/loaders/DRACOLoader.js";
   import { OrbitControls } from "three/addons/controls/OrbitControls.js";
   import { RoomEnvironment } from "three/addons/environments/RoomEnvironment.js";
   import { onMount } from "svelte";
@@ -40,9 +41,16 @@
       dirLight.position.set(50, 100, 50);
       scene.add(dirLight);
 
+      // Set up Draco loader
+      const dracoLoader = new DRACOLoader();
+      dracoLoader.setDecoderPath('https://www.gstatic.com/draco/versioned/decoders/1.5.6/');
+      dracoLoader.setDecoderConfig({ type: 'js' });
+
       const loader = new GLTFLoader();
+      loader.setDRACOLoader(dracoLoader);
+      
       loader.load(
-        "/Untitled1.glb",
+        "/Untitled1-compressed.glb",
         (gltf) => {
           const model = gltf.scene;
           scene.add(model);
@@ -83,6 +91,7 @@
 
       return () => {
         window.removeEventListener("resize", handleResize);
+        dracoLoader.dispose();
       };
     });
   }
