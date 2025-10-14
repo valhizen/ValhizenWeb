@@ -21,3 +21,16 @@
     but at least make it workable without bugs and I will also move on to creating 
     the start screen and characters and just things.
 </p>
+
+<p>Current : </p>
+  <img class="image" src="/MenuScreenInitial.png" alt="Menu Screen Initial Design"/>
+
+<style>
+  .image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem 0;
+  }
+
+</style>
