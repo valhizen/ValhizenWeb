@@ -109,18 +109,32 @@
         Read about <a href="/blogs/at-the-foot-of-the-mountain">my journey at the foot of the mountain</a>
       </p>
       <p>
-        If You somehow stumbled here, maybe just resize the website there is something cool. I made a Noise Image with 
-        Perlin Noise and used Blender to create the mesh for the mountain and used Three.js to show it here. 
+
+        If you somehow stumbled here, try resizing your browser
+        there's something cool " lack of optimization ". I generated 
+        this mountain with Perlin noise, sculpted the mesh in 
+        Blender, and brought it to web with Three.js. 
 
         Maybe Now it is here
 
+
       </p>
+
     </div>
 
     <div class="model-section">
       <div bind:this={container} class="three-container"></div>
     </div>
   </div>
+  <p>
+    Also the github for the website is : 
+    <a href="https://github.com/valhizen/ValhizenWeb"> Valhizen Web</a>
+  </p>
+  <p>
+    And the gihub for Perlins Noise is :
+    <a href="https://github.com/valhizen/PerlinNoise" > Perlin Noise</a>
+
+  </p>
 </div>
 
 <style>
