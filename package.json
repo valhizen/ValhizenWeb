@@ -27,6 +27,7 @@
 		]
 	},
 	"dependencies": {
+		"@gltf-transform/cli": "^4.2.1",
 		"three": "^0.180.0"
 	}
 }
