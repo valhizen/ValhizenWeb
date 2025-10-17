@@ -192,8 +192,7 @@
         Read about <a href="/blogs/at-the-foot-of-the-mountain">my journey at the foot of the mountain</a>
       </p>
       <p>
-        If you somehow stumbled here, try resizing your browser
-        there's something cool " lack of optimization ". I generated 
+        If you somehow stumbled here, play around with the mountain. I generated 
         this mountain with Perlin noise, sculpted the mesh in 
         Blender, and brought it to web with Three.js.
       </p>
