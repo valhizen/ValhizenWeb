@@ -5,12 +5,13 @@
 
   <h2>Current Project</h2>
   <div class="project-card">
-	<h3>Game Start Screen</h3>
-	<p><strong>Status:</strong> In Progress</p>
-	<p><strong>Deadline:</strong> October 19th, 2025</p>
-	<p>Designing and coding the start screen I abandoned before. This time, I'm finishing it.</p>
-	<p><em>Progress updates will be posted here as I build.</em></p>
-	<p><a href="/blogs/making-the-abandoned-menu-page">Read the development notes →</a></p>
+	<h1>
+		There is Nothing Here, I will update when there is something substantial
+	</h1>
+  </div>
+
+  <div>
+	You Can check out some code in My github at the top right in the Navigation Bar
   </div>
 
   <h2>Future Projects</h2>
