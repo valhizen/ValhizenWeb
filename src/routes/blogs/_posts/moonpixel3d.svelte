@@ -36,6 +36,11 @@ Version 1.0 is done. It works. It has bugs and things I would change but it's fi
 </p>
 
 <p>
+<a href="/solarsystem" style="display: inline-block; padding: 0.75rem 1.5rem; background: rgba(76, 175, 80, 0.2); color: #4CAF50; text-decoration: none; border-radius: 6px; border: 2px solid #4CAF50; font-weight: 600; margin: 1rem 0;">Try it live →</a>
+<a href="https://valhizen.itch.io/moonpixel" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 0.75rem 1.5rem; background: rgba(33, 150, 243, 0.2); color: #2196F3; text-decoration: none; border-radius: 6px; border: 2px solid #2196F3; font-weight: 600; margin: 1rem 0; margin-left: 1rem;">Download / Play on itch.io →</a>
+</p>
+
+<p>
 GitHub: <a href="https://github.com/valhizen/ifthemoonwereonlyonepixel" target="_blank" rel="noopener noreferrer">github.com/valhizen/ifthemoonwereonlyonepixel</a>
 </p>
 
