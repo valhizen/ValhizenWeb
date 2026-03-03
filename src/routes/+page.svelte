@@ -185,13 +185,9 @@
     <div class="intro-section">
       <h1 class="page-title">Hello I am Valhizen</h1>
       <p class="lead">
-        I am a University Student and Game Developer, this is an alias for 
-        me and my journey.
+        I am a Game Developer currenlty studying Computer Science in Kathmandu University, Kaver Nepal
       </p>
-      <p class="blog-link">
-        Read about <a href="/blogs/at-the-foot-of-the-mountain">my journey at the foot of the mountain</a>
-      </p>
-      <p>
+     <p>
         If you somehow stumbled here, play around with the mountain. I generated 
         this mountain with Perlin noise, sculpted the mesh in 
         Blender, and brought it to web with Three.js.
@@ -215,12 +211,8 @@
     </div>
   </div>
   <p>
-    Also the github for the website is: 
-    <a href="https://github.com/valhizen/ValhizenWeb">Valhizen Web</a>
-  </p>
-  <p>
-    And the github for Perlin Noise is:
-    <a href="https://github.com/valhizen/PerlinNoise">Perlin Noise</a>
+    Github :
+    <a href="https://github.com/valhizen">Valhizen</a>
   </p>
 </div>
 

@@ -6,7 +6,7 @@
     <p style="text-align: center; margin: 1.5rem 0;">
       <strong>Discord:</strong>valhizen<br>
       <strong>Email:</strong> <a href="mailto:valhizen@gmail.com">valhizen@gmail.com</a><br>
-      <strong>X (Twitter):</strong> <a href="https://x.com/valhizen28648" target="_blank" rel="noopener">@valhizen28648</a>
+      <strong>GitHub:</strong> <a href="https://github.com/valhizen" target="_blank" rel="noopener noreferrer">valhizen</a>
     </p>
   </div>
   
